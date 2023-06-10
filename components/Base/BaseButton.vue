@@ -1,8 +1,10 @@
 <script setup>
 defineProps({
-  label: String,
-  default: Button,
-})
+  label: {
+    type: String,
+    default: "button",
+  },
+});
 </script>
 <template>
   <a
