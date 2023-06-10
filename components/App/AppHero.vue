@@ -1,9 +1,9 @@
 <template>
-  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+  <div class="relative isolate overflow-hidden text-gray-900 py-24 sm:py-48">
     <img
       src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
       alt=""
-      class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+      class="absolute inset-0 -z-10 h-full w-full object-cover opacity-5 object-right md:object-center"
     />
     <div
       class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -61,11 +61,11 @@
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="text-center mx-auto max-w-4xl mt-8">
-        <h2 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 class="text-2xl font-bold tracking-tight text-black sm:text-4xl">
           Ethiopian Software Outsourcing Company: Delivering High-Quality,
           Cost-Effective Solutions
         </h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">
+        <p class="mt-6 text-lg leading-8 text-gray-900">
           We are a team of experienced software developers and engineers who are
           passionate about delivering high-quality, cost-effective software
           solutions to our clients. We have a proven track record of success in
@@ -79,7 +79,7 @@
         <div
           v-for="card in cards"
           :key="card.name"
-          class="flex gap-x-4 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10 hover:bg-white/20"
+          class="flex gap-x-4 rounded-xl bg-gray-700/5 p-6 ring-1 ring-inset ring-gray-500/5 hover:bg-white/60"
         >
           <component
             :is="card.icon"
@@ -87,8 +87,8 @@
             aria-hidden="true"
           />
           <div class="text-base leading-7">
-            <h3 class="font-semibold text-white">{{ card.name }}</h3>
-            <p class="mt-2 text-gray-300">{{ card.description }}</p>
+            <h3 class="font-semibold text-gray-900">{{ card.name }}</h3>
+            <p class="mt-2 text-gray-800">{{ card.description }}</p>
           </div>
         </div>
       </div>

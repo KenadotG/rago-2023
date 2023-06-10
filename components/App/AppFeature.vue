@@ -1,9 +1,9 @@
 <template>
   <div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-8xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
         <h2 class="text-base font-semibold leading-7 text-indigo-600">
-          Deploy faster
+          Our Process
         </h2>
         <p
           class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
@@ -16,9 +16,9 @@
           In mi viverra elit nunc.
         </p>
       </div>
-      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <div class="mx-auto mt-16 max-w-3xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
         <dl
-          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          class="grid max-w-6xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16"
         >
           <div
             v-for="feature in features"
@@ -57,27 +57,33 @@ import {
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Discovery",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      "We start by understanding your needs and requirements. We will ask you questions about your business, your goals, and your target audience. We will also review your current systems and processes.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Design",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      "Once we have a good understanding of your needs, we will begin to design a solution that meets your specific requirements. We will create wireframes, mockups, and prototypes to help you visualize your solution.",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Development",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      "Once the design is complete, we will begin development of your solution. We will use the latest technologies and best practices to ensure that your solution is scalable, reliable, and secure.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security",
+    name: "Testing",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "Once the development is complete, we will test your solution to ensure that it meets your requirements. We will perform functional, performance, and security testing.",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Deployment",
+    description:
+      "Once the testing is complete, we will deploy your solution to production. We will also provide training and support to help you get started.",
     icon: FingerPrintIcon,
   },
 ];
