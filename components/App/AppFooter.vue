@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/one-component-per-file -->
 <script setup>
 import { defineComponent, h } from "vue";
 

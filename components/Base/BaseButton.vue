@@ -2,7 +2,7 @@
 defineProps({
   label: String,
   default: Button,
-});
+})
 </script>
 <template>
   <a

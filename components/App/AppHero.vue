@@ -60,14 +60,17 @@
       />
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="text-center mx-auto max-w-2xl">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          Support center
+      <div class="text-center mx-auto max-w-4xl mt-8">
+        <h2 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+          Ethiopian Software Outsourcing Company: Delivering High-Quality,
+          Cost-Effective Solutions
         </h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
+          We are a team of experienced software developers and engineers who are
+          passionate about delivering high-quality, cost-effective software
+          solutions to our clients. We have a proven track record of success in
+          a variety of industries, and we are committed to providing our clients
+          with the best possible service.
         </p>
       </div>
       <div
@@ -105,21 +108,21 @@ import {
 
 const cards = [
   {
-    name: "Sales",
+    name: "Web Development",
     description:
-      "Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.",
+      "We provide high-quality web development services, from design and development to deployment and maintenance.",
     icon: PhoneIcon,
   },
   {
-    name: "Technical Support",
+    name: "Enterprise Software Development",
     description:
-      "Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.",
+      "We develop enterprise software that helps businesses of all sizes to improve their operations.",
     icon: LifebuoyIcon,
   },
   {
-    name: "Media Inquiries",
+    name: "Maintenance and Support",
     description:
-      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
+      "We offer a variety of maintenance and support services to help you keep your software running smoothly. ",
     icon: NewspaperIcon,
   },
 ];

@@ -1,5 +1,5 @@
 <template>
-  <header class="relative isolate z-10 bg-white">
+  <header class="fixed opacity-50 w-full isolate z-10 bg-white">
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       aria-label="Global"
@@ -64,13 +64,13 @@
                       aria-hidden="true"
                     />
                   </div>
-                  <a
-                    :href="item.href"
+                  <NuxtLink
+                    :to="item.href"
                     class="mt-6 block font-semibold text-gray-900"
                   >
                     {{ item.name }}
                     <span class="absolute inset-0" />
-                  </a>
+                  </NuxtLink>
                   <p class="mt-1 text-gray-600">{{ item.description }}</p>
                 </div>
               </div>
@@ -99,13 +99,13 @@
           </transition>
         </Popover>
 
-        <a href="/About" class="text-sm font-semibold leading-6 text-gray-900"
+        <a href="/about" class="text-sm font-semibold leading-6 text-gray-900"
           >About</a
         >
-        <a href="/Company" class="text-sm font-semibold leading-6 text-gray-900"
+        <a href="/company" class="text-sm font-semibold leading-6 text-gray-900"
           >Company</a
         >
-        <a href="/Contact" class="text-sm font-semibold leading-6 text-gray-900"
+        <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900"
           >Contact</a
         >
       </PopoverGroup>
@@ -168,17 +168,17 @@
                 </DisclosurePanel>
               </Disclosure>
               <a
-                href="/About"
+                href="/about"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >About</a
               >
               <a
-                href="/Company"
+                href="/company"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Company</a
               >
               <a
-                href="/Contact"
+                href="/contact"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Contact</a
               >

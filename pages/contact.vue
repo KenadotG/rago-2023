@@ -1,7 +1,6 @@
-<script setup>
-import ContactUs from "../Contacts/ContactUs.vue";
-</script>
-
 <template>
-  <ContactUs />
+  <div>
+    <ContactUs />
+    <AppFooter />
+  </div>
 </template>
