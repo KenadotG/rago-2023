@@ -1,7 +1,7 @@
 <script setup>
-import ContactUs from '../Contacts/ContactUs.vue';
+import ContactUs from "../Contacts/ContactUs.vue";
 </script>
 
 <template>
-    <ContactUs />
+  <ContactUs />
 </template>
