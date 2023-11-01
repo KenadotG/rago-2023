@@ -62,15 +62,10 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="text-center mx-auto max-w-4xl mt-8">
         <h2 class="text-2xl font-bold tracking-tight text-black sm:text-4xl">
-          Ethiopian Software Outsourcing Company: Delivering High-Quality,
-          Cost-Effective Solutions
+          Lorem ipsum dolor.
         </h2>
         <p class="mt-6 text-lg leading-8 text-gray-900">
-          We are a team of experienced software developers and engineers who are
-          passionate about delivering high-quality, cost-effective software
-          solutions to our clients. We have a proven track record of success in
-          a variety of industries, and we are committed to providing our clients
-          with the best possible service.
+          We have a proven track record of success in a variety of  service.
         </p>
       </div>
       <div
