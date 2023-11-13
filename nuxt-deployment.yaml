@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nuxt-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nuxt-app
+  template:
+    metadata:
+      labels:
+        app: nuxt-app
+    spec:
+      containers:
+        - name: nuxt-container
+          image: kenag/nuxt-project:1.0.0
+          ports:
+            - containerPort: 3000
+
+
