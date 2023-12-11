@@ -4,22 +4,26 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/KenadotG/rago-2023.git'
+        checkout([$class: 'GitSCM', 
+          branches: [[name: '*/main']], 
+          userRemoteConfigs: [[url: 'https://github.com/KenadotG/rago-2023.git']]])
       }
     }
 
     stage('Build Docker Image') {
       steps {
         script {
-          docker.build('kenag/nuxt-project')
+          sh 'docker build -t nuxt-image .'
         }
       }
     }
 
     stage('Deploy to Minikube') {
       steps {
-        sh 'kubectl apply -f nuxt-deployment.yaml'
-      }
+        script {
+          sh 'kubectl apply -f nuxt-deployment.yaml'
+        }
+      }  
     }
   }
 }
