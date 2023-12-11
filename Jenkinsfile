@@ -7,23 +7,24 @@ pipeline {
         checkout([$class: 'GitSCM', 
           branches: [[name: '*/main']], 
           userRemoteConfigs: [[url: 'https://github.com/KenadotG/rago-2023.git']]])
+          echo 'Checkout successfully.'
       }
     }
 
-    stage('Build Docker Image') {
-      steps {
-        script {
-          sh 'docker build -t nuxt-image .'
-        }
-      }
-    }
+    // stage('Build Docker Image') {
+    //   steps {
+    //     script {
+    //       sh 'docker build -t nuxt-image .'
+    //     }
+    //   }
+    // }
 
-    stage('Deploy to Minikube') {
-      steps {
-        script {
-          sh 'kubectl apply -f nuxt-deployment.yaml'
-        }
-      }  
-    }
+    // stage('Deploy to Minikube') {
+    //   steps {
+    //     script {
+    //       sh 'kubectl apply -f nuxt-deployment.yaml'
+    //     }
+    //   }  
+    // }
   }
 }
