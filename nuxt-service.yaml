@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nuxt-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - protocol: TCP
       port: 80
